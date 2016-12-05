@@ -6,6 +6,7 @@ applications:
 - services:
   - my-nlc-service
   name: natural-language-classifier-demo1
+  host: natural-language-classifier-demo1
   command: npm start
   path: .
   memory: 512M
