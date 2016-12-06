@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 app.post("/api/classify", (req, res, next) =>
   classifier.classify({
     text: req.body.text,
-    classifier_id: process.env.CLASSIFIER_ID || "8d6cd8x123-nlc-5851",
+    classifier_id: process.env.CLASSIFIER_ID || "b73235x135-nlc-2466",
   }, (err, data) => {
     if (err) {
       return next(err);
