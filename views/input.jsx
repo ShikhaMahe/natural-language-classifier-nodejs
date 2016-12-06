@@ -47,15 +47,14 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <h2 className="base--h2">Ask a question about the weather</h2>
-        <p className="base--p" >Watch the Natural Language Classifier
-          categorize your weather-related question. In this demo, the classifier is
+        <h2 className="base--h2">Ask a question </h2>
+        /*<p className="base--p" >Watch the Natural Language Classifier
+          categorize your question. In this demo, the classifier is
           trained to determine whether the question is related
-          to <code className="base--code">temperature</code> or
-          &nbsp;<code className="base--code">conditions</code>.
-          The output includes
-          the top classification and a confidence score.
-        </p>
+          to <code className="base--code">appreciation</code> or
+          &nbsp;<code className="base--code">Negative</code>.
+          The output includes the top classification and a confidence score.
+        </p>*/
         <div className="question-input">
           <div className="question-input--input-container">
             <input
@@ -65,7 +64,7 @@ export default React.createClass({
               onChange={this.handleInputChange}
               onKeyPress={this.handleKeyPress}
               id="question"
-              placeholder="Enter a weather question or Try a sample question below"
+              placeholder="Enter a question or Try a sample question below"
               className="base--input question-input--input"
               required="true"
             />
@@ -80,7 +79,7 @@ export default React.createClass({
             </button>
           </div>
         </div>
-        <h3 className="base--h3">Sample questions</h3>
+        /*<h3 className="base--h3">Sample questions</h3>
 
         <div className="sample-questions">
           <div className="sample-questions--left">
@@ -140,7 +139,7 @@ export default React.createClass({
               </a>, yet the classifier correctly handles questions about them.
             </p>
           </div>
-        </div>
+        </div>*/
       </div>
     );
   },
