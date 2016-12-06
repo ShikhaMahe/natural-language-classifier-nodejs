@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-const express = require('express');
+const express = require("express");
 const app = express();
-const NaturalLanguageClassifierV1 = require('watson-developer-cloud/natural-language-classifier/v1');
+const NaturalLanguageClassifierV1 = require("watson-developer-cloud/natural-language-classifier/v1");
 
 // Bootstrap application settings
-require('./config/express')(app);
+require("./config/express")(app);
 
 const classifier = new NaturalLanguageClassifierV1({
   // If unspecified here, the NATURAL_LANGUAGE_CLASSIFIER_USERNAME and
@@ -29,17 +29,17 @@ const classifier = new NaturalLanguageClassifierV1({
   // password: '<password>',
 });
 
-app.get('/', (req, res) => {
-  res.render('index');
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
 /**
  * Classify text
  */
-app.post('/api/classify', (req, res, next) =>
+app.post("/api/classify", (req, res, next) =>
   classifier.classify({
     text: req.body.text,
-    classifier_id: process.env.CLASSIFIER_ID || '<classifier-id>',
+    classifier_id: process.env.CLASSIFIER_ID || "8d6cd8x123-nlc-5770",
   }, (err, data) => {
     if (err) {
       return next(err);
@@ -49,6 +49,6 @@ app.post('/api/classify', (req, res, next) =>
 );
 
 // error-handler settings
-require('./config/error-handler')(app);
+require("./config/error-handler")(app);
 
 module.exports = app;

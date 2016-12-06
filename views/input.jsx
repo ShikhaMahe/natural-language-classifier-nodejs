@@ -133,7 +133,7 @@ export default React.createClass({
               are not part of the&nbsp;
               <a
                 className="base--a"
-                href="https://github.com/watson-developer-cloud/natural-language-classifier-nodejs/blob/master/training/FS_data_train.csv"
+                href="https://github.com/ShikhaMahe/natural-language-classifier-nodejs/tree/master/training/FS_data_train.csv"
                 target="_blank"
                 rel="noopener noreferrer"
               >training data
