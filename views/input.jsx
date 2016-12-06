@@ -48,13 +48,7 @@ export default React.createClass({
     return (
       <div>
         <h2 className="base--h2">Ask a question </h2>
-        /*<p className="base--p" >Watch the Natural Language Classifier
-          categorize your question. In this demo, the classifier is
-          trained to determine whether the question is related
-          to <code className="base--code">appreciation</code> or
-          &nbsp;<code className="base--code">Negative</code>.
-          The output includes the top classification and a confidence score.
-        </p>*/
+        
         <div className="question-input">
           <div className="question-input--input-container">
             <input
@@ -79,67 +73,7 @@ export default React.createClass({
             </button>
           </div>
         </div>
-        /*<h3 className="base--h3">Sample questions</h3>
-
-        <div className="sample-questions">
-          <div className="sample-questions--left">
-            <ul className="base--ul">
-              <li className="base--li">
-                <a
-                  className="base--a"
-                  onClick={this.onSampleQuestionClick}
-                >
-                  Is it hot outside?
-                </a>
-              </li>
-              <li className="base--li">
-                <a
-                  className="base--a"
-                  onClick={this.onSampleQuestionClick}
-                >
-                  What is the expected high for today?
-                </a>
-              </li>
-              <li className="base--li">
-                <a
-                  className="base--a"
-                  onClick={this.onSampleQuestionClick}
-                >
-                  Will it be foggy tomorrow morning?
-                </a>
-              </li>
-              <li className="base--li">
-                <a
-                  className="base--a"
-                  onClick={this.onSampleQuestionClick}
-                >
-                  Should I prepare for sleet?
-                </a>
-              </li>
-              <li className="base--li">
-                <a
-                  className="base--a"
-                  onClick={this.onSampleQuestionClick}
-                >
-                  Will there be a storm today?
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="sample-questions--right">
-            <p className="base--p">The classifier often scores well with terms that it hasn't
-              been trained on. In the sample questions, the words "sleet," or "foggy,"
-              are not part of the&nbsp;
-              <a
-                className="base--a"
-                href="https://github.com/ShikhaMahe/natural-language-classifier-nodejs/tree/master/training/FS_data_train.csv"
-                target="_blank"
-                rel="noopener noreferrer"
-              >training data
-              </a>, yet the classifier correctly handles questions about them.
-            </p>
-          </div>
-        </div>*/
+    
       </div>
     );
   },
